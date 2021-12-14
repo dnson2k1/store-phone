@@ -89,8 +89,8 @@ iframe {
   align-items: center;
   width: 40px;
   height: 40px;
-  bottom: 20px;
-  right: 60px;
+  bottom: 60px;
+  right: 30px;
   color: #fff;
   background: #ee0896;
   transition: all 0.2s linear;
