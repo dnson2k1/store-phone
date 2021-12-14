@@ -1,0 +1,103 @@
+.product {
+  padding: 0 100px;
+  @include flex(center, center);
+  &-slides {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  &-new {
+    margin-bottom: 70px;
+  }
+  &-hot {
+    margin-bottom: 70px;
+  }
+  &-heading {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    margin-bottom: 50px;
+  }
+  &-items {
+    position: relative;
+  }
+  &-card {
+    width: 100%;
+    border: 2px solid rgb(224, 224, 224);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgb(21, 208, 241);
+      clip-path: circle(150px at 80% 20%);
+      z-index: -1;
+      transition: all 0.3s linear;
+    }
+    &:hover::after {
+      clip-path: circle(300px at 80% -20%);
+    }
+
+    &-img {
+      margin-bottom: 5px;
+    }
+    &-content {
+      z-index: 1;
+      padding: 20px 20px 0;
+      & > h2 {
+        font-size: 16px;
+        font-weight: normal;
+        margin-bottom: 10px;
+      }
+      & > p {
+        font-size: 18px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        display: inline-block;
+      }
+      & > span {
+        font-weight: bold;
+      }
+    }
+    &-rate {
+      font-size: 17px;
+      margin-bottom: 10px;
+      @include flex(start, start);
+      & > span {
+        cursor: pointer;
+        & > i {
+          @include flex(center, center);
+          margin-right: 20px;
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+          color: rgb(253, 253, 249);
+          background: rgb(82, 81, 81);
+          outline: none;
+          transition: all 0.2s linear;
+          &:hover {
+            background-color: $color-blue;
+          }
+        }
+      }
+    }
+  }
+  &-btn {
+    padding: 5px 10px;
+    color: #fff;
+    background: #000;
+    border-radius: 3px;
+    font-size: 16px;
+    transition: all 0.2s linear;
+    &:hover {
+      background: rgb(255, 255, 255);
+      color: $color-red;
+      border: none;
+    }
+  }
+}

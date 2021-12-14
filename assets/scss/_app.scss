@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+$color-black: rgb(26, 26, 26);
+$font-family: "Open Sans", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+body {
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $color-black;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: unset;
+}
+button,
+input {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+iframe {
+  border: 0;
+}
+.container {
+  max-width: 1660px;
+  margin: auto;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(238, 8, 150);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  &:hover {
+    background: rgb(5, 215, 230);
+  }
+}
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
+}
+.slick-slide {
+  margin: 0 10px;
+}
+.totop {
+  position: fixed;
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #ee0896;
+  transition: all 0.2s linear;
+  visibility: hidden;
+  &:hover {
+    background: rgb(30, 144, 255);
+  }
+}
+.totop-active {
+  visibility: visible;
+}

@@ -1,0 +1,31 @@
+.category {
+  border: 1px solid rgb(225, 225, 225);
+  flex: 0.6;
+  padding: 30px;
+  border-radius: 7px;
+  &-heading {
+    padding-bottom: 20px;
+    margin: 10px 0;
+    color: rgb(117, 117, 117);
+    font-size: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60%;
+      height: 2px;
+      background: rgb(225, 225, 225);
+    }
+  }
+
+  &-item {
+    margin: 3px 0;
+  }
+  &-link {
+    color: rgb(90, 90, 90);
+    font-size: 16px;
+    padding: 3px 0;
+  }
+}

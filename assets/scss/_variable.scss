@@ -1,0 +1,33 @@
+$color-main: rgb(43, 42, 42);
+$color-white: rgb(255, 255, 255);
+$color-red: rgb(229, 47, 55);
+$color-green: rgb(39, 179, 106);
+$color-blue: rgb(30, 144, 255);
+$color-yellow: rgb(253, 204, 40);
+$color-bluedark: rgb(11, 1, 59);
+$color-grey: rgb(225, 225, 225);
+
+$bgClr: rgba(#0b0f27, 0.83);
+
+.btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  background: transparent;
+  color: $color-white;
+  display: inline-block;
+}
+.heart-active {
+  color: $color-red !important;
+  background: rgb(243, 243, 243) !important;
+}
+.overlays {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(240, 10, 10, 0.7);
+}
+.bank {
+  width: 60%;
+}

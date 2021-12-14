@@ -1,0 +1,47 @@
+.product-related {
+  padding: 50px;
+  &-item {
+    display: none;
+    &-active {
+      display: grid;
+    }
+  }
+  &-list {
+    @include flex(center, center);
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+    &::after {
+      content: "";
+      position: absolute;
+      margin: auto;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      width: 50%;
+      height: 2px;
+      background: rgb(190, 188, 188);
+    }
+
+    &-item {
+      margin: 0 10px;
+      font-size: 22px;
+      font-weight: bold;
+      color: rgb(68, 68, 68);
+      transition: all 0.2s linear;
+      cursor: pointer;
+      position: relative;
+      &:hover {
+        color: $color-red;
+      }
+      &-active {
+        color: $color-red;
+      }
+    }
+    & > span {
+      font-size: 27px;
+      margin: 0 10px;
+      color: $color-grey;
+    }
+  }
+}

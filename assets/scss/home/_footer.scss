@@ -1,0 +1,75 @@
+.footer {
+  background: rgb(11, 1, 59);
+  &-items {
+    @include flex(start, space-between);
+    gap: 0 50px;
+    margin-bottom: 10px;
+  }
+  &-item {
+    padding: 20px;
+    width: 50%;
+    color: rgb(212, 211, 211);
+    &-heading {
+      font-size: 30px;
+      margin-bottom: 10px;
+      position: relative;
+      line-height: 60px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        background: rgb(240, 6, 201);
+        width: 30%;
+        height: 5px;
+      }
+    }
+    &-desc {
+      font-size: 15px;
+      margin-bottom: 10px;
+      padding-right: 30px;
+    }
+    &-about {
+      font-size: 30px;
+      & > a {
+        &:nth-child(1) {
+          margin-right: 10px;
+        }
+      }
+    }
+    &-info {
+      &-contact {
+        @include flex(center, start);
+        margin-bottom: 15px;
+        & > i {
+          margin-right: 20px;
+          font-size: 20px;
+        }
+        & > p {
+          font-size: 15px;
+        }
+        & > img {
+          width: 50%;
+        }
+      }
+    }
+  }
+  &-logo {
+    margin-bottom: 15px;
+  }
+  &-design {
+    color: $color-white;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding: 20px;
+
+    & > span {
+      color: $color-red;
+      text-decoration: underline;
+    }
+  }
+}

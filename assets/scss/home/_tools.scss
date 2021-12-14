@@ -1,0 +1,184 @@
+.tools {
+  padding: 5px 20px;
+  background-color: rgb(245, 244, 244);
+  &-item {
+    @include flex(center, space-between);
+
+    &-mail {
+      @include flex(center, space-between);
+      position: relative;
+      padding-right: 30px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: rgb(206, 206, 206);
+        height: 100%;
+        width: 2px;
+      }
+      & > a {
+        font-size: 13px;
+        & > i {
+          margin-right: 10px;
+        }
+        &:hover {
+          color: $color-red;
+        }
+      }
+    }
+
+    &-info {
+      @include flex(center, space-between);
+      padding: 0 20px;
+      flex: 1;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+        bottom: 0;
+        background: rgb(206, 206, 206);
+        height: 65%;
+        width: 2px;
+        transform: translateY(-50%);
+      }
+      & > h1 {
+        font-size: 15px;
+        font-weight: normal;
+      }
+      &-icon {
+        & > a {
+          padding: 0 5px;
+          transition: all 0.2s linear;
+          &:hover {
+            color: $color-red;
+          }
+        }
+      }
+    }
+    &-user {
+      flex: 0.5;
+      @include flex(center, start);
+      &-language {
+        margin-left: 10px;
+        padding-right: 20px;
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          bottom: 0;
+          background: rgb(206, 206, 206);
+          height: 65%;
+          width: 2px;
+          transform: translateY(-50%);
+        }
+      }
+      &-account,
+      &-cart {
+        margin-left: 20px;
+        font-size: 15px;
+        position: relative;
+        &-table {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 600px;
+          z-index: 20;
+          color: #000;
+          border-radius: 5px;
+          transform: translateY(35px);
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.3s linear;
+          &--show {
+            opacity: 1;
+            visibility: visible;
+          }
+          & > table {
+            max-width: 100%;
+            min-height: 100px;
+            text-align: center;
+            padding: 10px;
+            border-collapse: separate;
+            border-spacing: 0px 8px;
+            box-shadow: #444544 0px 3px 5px;
+
+            background: rgb(255, 255, 255);
+          }
+          &-img {
+            width: 20%;
+          }
+          &-quality {
+            width: 13%;
+          }
+          &-btn {
+            border: none;
+            color: $color-red;
+            font-size: 18px;
+            cursor: pointer;
+            background: transparent;
+          }
+          &-removeAll {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+          &-sum {
+            font-weight: bold;
+          }
+          &-payment {
+            background: #000;
+            color: #fff;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 13px;
+            &:hover {
+              background: rgb(63, 63, 63);
+            }
+          }
+        }
+        & > a {
+          font-weight: 500;
+          padding: 3px 5px;
+          transition: all 0.2s linear;
+          &:hover {
+            color: $color-red;
+          }
+        }
+      }
+      &-cart {
+        position: relative;
+        margin-left: 10px;
+
+        padding-right: 20px;
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          bottom: 0;
+          background: rgb(206, 206, 206);
+          height: 75%;
+          width: 2px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+#selectlanguage {
+  padding: 7px;
+  border: none;
+  background: transparent;
+  position: relative;
+  outline: none;
+}

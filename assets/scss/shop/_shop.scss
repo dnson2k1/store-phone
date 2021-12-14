@@ -1,0 +1,22 @@
+.shop {
+  &-heading {
+    color: $color-white;
+    text-align: center;
+    font-size: 50px;
+    background-color: rgba(11, 1, 59, 0.8);
+    padding: 30px;
+    margin-bottom: 50px;
+  }
+  &-items {
+    @include flex(start, start);
+    padding: 0 70px;
+    margin-bottom: 50px;
+  }
+  &-item {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex: 2;
+    gap: 30px 30px;
+  }
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <title>DNS</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <section class="tools">
+        <div class="tools-item">
+          <div class="tools-item-mail">
+            <a href="mailto:demo@example.com">
+              <i class="fas fa-envelope"></i>dnsang.dev@gmail.com</a
+            >
+          </div>
+          <div class="tools-item-info">
+            <h1>Free Shopping for all Order of $99</h1>
+
+            <div class="tools-item-info-icon">
+              <a href="#">
+                <i class="fab fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </div>
+          </div>
+          <div class="tools-item-user">
+            <div class="tools-item-user-language">
+              <select id="selectlanguage">
+                <option>English</option>
+                <option>Vietnames</option>
+              </select>
+            </div>
+            <div class="tools-item-user-cart">
+              <a href="#" class="cart-icon" onclick="showCart()"
+                >Cart <i class="fas fa-shopping-cart"></i>
+              </a>
+              <div class="tools-item-user-cart-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="tools-item-user-cart-table-img">Hình Ảnh</th>
+                      <th class="tools-item-user-cart-table-name">Tên</th>
+                      <th class="tools-item-user-cart-table-quality">
+                        Số Lượng
+                      </th>
+                      <th class="tools-item-user-cart-table-price">Giá</th>
+                    </tr>
+                  </thead>
+                  <tbody id="myCart"></tbody>
+                  <tfoot id="myCartFt"></tfoot>
+                  <div class="tools-item-user-cart-table-footer"></div>
+                </table>
+              </div>
+            </div>
+            <div class="tools-item-user-account">
+              <i class="fas fa-user"></i>
+              <a href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <div class="nav-search">
+              <input
+                class="nav-search-input"
+                type="text"
+                placeholder="What do you need?"
+              />
+            </div>
+            <div class="nav-logo">
+              <a href="index.html"><span>D.</span><span>Sa</span><span>ng</span></a>
+            </div>
+            <ul class="nav-list">
+              <li class="nav-item ">
+                <a href="index.html" class="nav-link">Trang Chủ</a>
+              </li>
+              <li class="nav-item">
+                <a href="phone.html" class="nav-link">Điện Thoại</a>
+              </li>
+              <li class="nav-item">
+                <a href="clock.html" class="nav-link">Đồng Hồ</a>
+              </li>
+              <li class="nav-item">
+                <a href="accessory.html" class="nav-link">Phụ Kiện</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="shop" data-aos="fade-up">
+        <div class="container">
+          <h1 class="shop-heading">Cửa Hàng</h1>
+          <div class="shop-items">
+            <div class="category" data-aos="fade-up">
+              <h1 class="category-heading">Categories</h1>
+              <ul class="category-list">
+                <li class="category-item">
+                  <a href="phone.html" class="category-link">Điện Thoại (8)</a>
+                </li>
+                <li class="category-item">
+                  <a href="accessory.html" class="category-link">Phụ Kiện (10)</a>
+                </li>
+                <li class="category-item">
+                  <a href="clock.html" class="category-link">Đồng Hồ (20)</a>
+                </li>
+              </ul>
+              <h1 class="category-heading">Brands</h1>
+              <ul class="category-list">
+                <li class="category-item">
+                  <a href="#" class="category-link">Apple</a>
+                </li>
+                <li class="category-item">
+                  <a href="#" class="category-link">SamSung (7)</a>
+                </li>
+                <li class="category-item">
+                  <a href="#" class="category-link">Xiaomi (10)</a>
+                </li>
+                <li class="category-item">
+                  <a href="#" class="category-link">Apple Watch (4)</a>
+                </li>
+              </ul>
+            </div>
+            <div class="shop-item" data-aos="fade-up">
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                  <img
+                    class="product-card-img"
+                    src="./assets/images/iphone-13-starlight-1-600x600.png"
+                    alt="nike-air-shoe"
+                  />
+
+                  <div class="product-card-content">
+                    <h2 class="product-card-content-name">
+                      I Phone 13 Starlight
+                    </h2>
+                    <p class="product-card-content-price">35000000</p>
+                    <span>đ</span>
+                    <div class="product-card-rate">
+                      <span class="product-cart" title="Giỏ Hàng">
+                        <i class="fas fa-shopping-bag"></i
+                      ></span>
+                      <span title="Yêu Thích">
+                        <i class="fas fa-heart product-heart"></i
+                      ></span>
+                      <span class="product-view" title="Xem Nhanh">
+                        <i class="far fa-eye"></i
+                      ></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/oppo-a95-4g-bac-2-600x600.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >Oppo A95 4G</h2>
+                        <p class="product-card-content-price">23220000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/xiaomi-mi-11-xanhduong-600x600-600x600.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >Xiaomi Mi 11</h2>
+                        <p class="product-card-content-price">19999000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/iphone-13-pro-max-silver-600x600.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >I Phone 13 Pro Max</h2>
+                        <p class="product-card-content-price">45000000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/Vivo-V23e-1-2-600x600.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >Vivo V23e</h2>
+                        <p class="product-card-content-price">23000000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/dong-ho-02.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >Oppo Watch</h2>
+                        <p class="product-card-content-price">5760000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/dong-ho-03.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >BeU B2</h2>
+                        <p class="product-card-content-price">520000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/phukien/cap-type-c-1m-hydrus-dr-t01-thumb-600x600.jpg">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >Cap sạc hydrus</h2>
+                        <p class="product-card-content-price">490000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+              <div class="product-items"data-aos="fade-up">
+                <div class="product-card">
+                
+                        <img class="product-card-img" src="./assets/images/phukien/chuot-gaming-logitech-g102-den01-600x600.jpg" alt="nike-air-shoe">
+                
+        
+                    <div class="product-card-content">
+                        <h2 class="product-card-content-name" >Chuột gaming ogitech</h2>
+                        <p class="product-card-content-price">690000</p>
+                        <span>đ</span>
+                        <div class="product-card-rate">
+                          <span class="product-cart" title="Giỏ Hàng"> 
+                             <i class="fas fa-shopping-bag "></i></span>
+                          <span  title="Yêu Thích">
+                              <i class="fas fa-heart product-heart "></i></span>
+                          <span class="product-view"  title="Xem Nhanh"> 
+                             <i class="far fa-eye "></i></span>
+                     
+                        
+                        </div>
+                    </div>
+        
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal"></div>
+        <div class="modal-content">
+          <button  class="modal-content-close"><i class="fas fa-times"></i></button>
+          <div class="modal-content-left">
+            <img class="modal-content-img" src=""></img>
+          </div>
+          <div class="modal-content-right">
+            <h1 class="modal-content-name"></h1>
+            <h1 class="modal-content-price"></h1>
+            <p class="modal-content-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, in illo? Vitae tenetur deleniti earum aliquam, cupiditate velit eligendi consequuntur dolore dolor suscipit possimus ut maiores doloribus eos excepturi eum?</p>
+            
+            <p class="modal-content-status">Còn Hàng</p>
+            <!-- <div class="modal-content-quality">
+              <button id="modal-down" onclick="buttonModalDown()" type="button">-</button>
+              <input type="text" value="1" id="modal-content-number">
+              <button id="modal-up" onclick="buttonModalUp()" type="button">+</button>
+              <a href="#" class="modal-content-btn">Add to card</a>
+            </div> -->
+            <img class="bank" src="./assets/images/nganhang2.png" alt="" >
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-items" data-aos="fade-up">
+          <div class="footer-item">
+            <div class="nav-logo footer-logo">
+              <a href="#home"><span>D.</span><span>Sa</span><span>ng</span></a>
+            </div>
+            <p class="footer-item-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis enim, ad recusandae vero officia nobis laboriosam!
+              Mollitia excepturi quibusdam corporis praesentium nulla reiciendis
+              inventore! Temporibus rerum unde animi nihil asperiores?
+            </p>
+            <div class="footer-item-about">
+              <a href="#">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-item">
+            <h1 class="footer-item-heading">Get In Touch</h1>
+            <div class="footer-item-info">
+              <div class="footer-item-info-contact">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>130/4a Cống Lở phường 15 quận Tân Bình</p>
+              </div>
+              <div class="footer-item-info-contact">
+                <i class="fas fa-phone"></i>
+                <p>0968894***</p>
+              </div>
+              <div class="footer-item-info-contact">
+                <i class="fas fa-envelope"></i>
+                <p>dnsang.dev@gmail.com</p>
+              </div>
+              <div class="footer-item-info-contact">
+                <img class="bank" src="./assets/images/nganhang2.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="footer-design">
+          Design by <span>Dang Ngoc Sang</span>
+          <i class="fas fa-heart"></i>
+          <p class="date"></p>
+        </h1>
+      </footer>
+
+      <a href="#" class="totop"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
